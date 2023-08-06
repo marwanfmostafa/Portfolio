@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head> 
+    <!--linking a google font style that isn't default, as well as my .svg file for icons I implement into the site-->ZZ
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/svg/double_chevron_down.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Marwan Mostafa's Portfolio</title>
+   
+</head>
+<body>
+    <!--split the nav bar into 3 unique tags so that I can space them evenly for a more aesthetic look-->
+    <nav>
+        <h1>Marwan's Portfolio</h1>
+        <ul>
+            <li><a href="#about-me">about</a></li>
+            <li><a href="#experience">experience</a></li>
+            <li><a href="#projects">projects</a></li>
+        </ul>
+        <p><a href="#contact">message me NOW!</a></p>
+    </nav>
+    <!--title page html-->
+    <section class="title">
+            <h2>I'm Marwan, welcome to my portfolio!</h2>
+            <p>Full Stack Developer in the making</p>
+            <!--Added image to scroll down-->
+            <a class="arrow" href="#about-me">
+               
+                <img src="./assets/images/gradient_button2.gif" 
+                style = "display: block; margin-left: auto; margin-right: auto;" /> 
+            </a>
+    </section>
+    <!--this section is the 'about me' page html-->
+    <section id="about-me" class="about-me">
+        <header class="about-me-header"> 
+            <h3>Who am I</h3>
+        </header>
+        <section class="about-me-container">
+            <div class="info">
+                <p>Hello and thanks for stopping by!  My name is Marwan Mostafa, born in Cairo, Egypt and moved to the U.S. when I was only 4 years old. I've spent over 20 years developing my career by exposing myself to a variety of industries including, but not limted to, finance and accounting, internet technology, sales and marketing to name a few. <br> <br>
+                    
+                
+                    I attended Cal State Long Beach and majored in Business Management. <br> <br>
+                    My uncompromising work ethic and relentless pursuit of knowledge acquisition are amongst my strongest attributes and have always paid back dividends. One of my favorite quotes was said by Henry Ford, "Whether you think you can or not you're right."
+                </p>
+            </div>
+                       <div class="about-me-image">
+                <img src="assets/images/MM_headshot2.png" alt="Headshot of Marwan Mostafa">
+                
+            </div>
+        </section>
+    </section>
+    <!--this section is the 'Experience' page-->
+    <section id="experience" class="experience">
+        <header class="experience-header">
+            <h3>Work Experience</h3>
+        </header>
+        <div class="experience-container">
+            <!--this section is for the first 'experience'-->
+            <section>
+                <div class="header-container">
+                    <h3>Senior Database Analyst</h3>
+                    <p>KPMG LLC</p>
+                    <p>San Francisco, CA</p>
+                </div>
+                <div class="experience-subheader"> 
+                    <p>2015 - 2022</p>
+                </div>
+                <article class="list-container">
+                    <ul>
+                        <li>Administer all database projects and ensure compliance</li>
+                        <li> Analyze systems and prepare reports for status of projects and submit it to user management</li>
+                        <li>Work closely with customers, application development and other DBA teams to ensure that stringent back-up, recovery and replication strategies are developed, tested, implemented and maintained for development and production database environments    
+                        <li>
+                            Coordinate project data issue identification, escalation, and resolution as appropriate</li>
+                        <li>Define and write functional specification in support of the data quality requirements</li>
+
+
+                    </ul>
+
+
+                </article>
+            </section>
+            <!--this section is for the second 'experience' container-->
+            <!--because both articles here share the same decoration, i kept the name of most of the classes the same, so that a single css edit will impact them both-->
+            <section>
+                <article>
+                    <div class="header-container">
+                        <h3>Digital Marketing Partner</h3>
+                        <p>Local Splash</p>
+                        <p>Costa Mesa, CA</p>
+                    </div>
+                    <div class="experience-subheader"> 
+                        <p>2011 - 2015</p>
+                    </div>
+                    <article class="list-container">
+                        <ul>
+                            <li>Increasing brand awareness through a variety of strategies and approaches</li> 
+                            <li>Utilize campaign measurement, web analytics, and other tools to pull and evaluate campaign data</li>
+                            <li>Creation, design, and implementation of training materials for new employee onboarding</li>
+                            <li>Responsible for training new and existing personnel, both one-on-one and in group environments</li>
+                            <li>Analyzing ROIs and KPIs, click through rates, conversion rates, etc.</li>
+      
+
+                        </ul>
+                    </article>
+                </section>
+            <!--this section is for the third 'experience' container--> 
+            <section>
+                <article>
+                    <div class="header-container">
+                        <h3>Esports Player</h3>
+                        <p>Misfits Gaming Group</p>
+                    </div>
+                    <div class="experience-subheader"> 
+                        <p>Mar 2019 - July 2019</p>
+                    </div>
+                    <article class="list-container">
+                        <ul>
+                            <li>This was my first esports contract, I worked from home while in my senior year of high school.</li>
+                            <li>We were able to become champions of ESl mobile open at the DreamHack Dallas 2019 LAN tournament.</li>
+                            <li>Some skills involved with this job was; recruiting, team management, contract negotiations, and competitive analysis</li>
+                        </ul>
+                    </article>
+                </article>
+            </section>
+        </div>
+    </section>
+    <!--this section is the 'Projects' page-->
+    <section id="projects" class="projects">
+            <header class="projects-header">
+                <h3>Featured Project</h3>
+            </header>
+                <section class="projects-container">
+                    <a href="https://notuneeven.github.io/Tybalt-Mallet-Personal-Portfolio/"><img src="assets/images/SS.PNG" alt="Screenshot of Project Website"></a>
+                </section>
+                <article class="first-project-description">
+                    <h3>This Website!</h3>
+                    <p>As of now, this is the first project that I have completed myself from start to finish, using only HTML and CSS, how do you like it? </p>
+                </article>
+                <p class="sub-description">HTML CSS</p>
+                <a class="github-icon" href="https://github.com/notUnEeVeN/Tybalt-Mallet-Personal-Portfolio">
+                    <img src="assets/images/github.PNG" alt="Github logo">
+                </a>
+                <a class="link-icon" href="https://notuneeven.github.io/Tybalt-Mallet-Personal-Portfolio/">
+                    <img src="assets/images/linkto.PNG" alt="External link logo">
+                </a>
+            <header class="other-projects-header">
+                <h3>Other Projects</h3>
+            </header>
+            <!--this section is for the first row of 'other projects'-->
+            <section class="row-one-projects-container">
+                <article class="other-projects-container">
+                    <a href="https://notuneeven.github.io/Horiseon-Code-Refactoring/">
+                        <img src="assets/images/horiseon.PNG" alt="Screenshot of Project">
+                    </a>
+                    <section class="other-projects-subcontainer">
+                        <h3>Horiseon Code Refactor</h3>
+                        <p>My very first project at UCB! I was given started code in dire need of refactoring, how'd I do? </p>
+                    </section>
+                    <p class="other-sub-description">HTML CSS</p>
+                    <a class="other-projects-github" href="https://github.com/notUnEeVeN/Horiseon-Code-Refactoring">
+                        <img src="assets/images/github.PNG"  alt="Github logo">
+                    </a>
+                    <a class="other-projects-link" href="https://notuneeven.github.io/Horiseon-Code-Refactoring/">
+                        <img src="assets/images/linkto.PNG" alt="External link logo">
+                    </a>
+                </article>
+                <!--blank article slate for future projects-->
+                <article class="other-projects-container">
+                    <a href="#">
+                        <img src="assets/images/sample1.png" alt="Screenshot of Project">
+                    </a>
+                    <section class="other-projects-subcontainer">
+                            <h3>Project</h3>
+                        <p>I am leaving some room for future projects, hopefully I'll fill this up quickly.</p>
+                    </section>
+                    <p class="other-sub-description">HTML CSS JS</p>
+                    <a class="other-projects-github" href="#">
+                        <img src="assets/images/github.PNG"  alt="Github logo">
+                    </a>
+                    <a class="other-projects-link" href="#">
+                        <img src="assets/images/linkto.PNG" alt="External link logo">
+                    </a>
+                </article>
+            </section>
+    </section>
+    <!--this section is the 'Contact' page-->
+    <section id="contact" class="contact">
+        <header class="contact-header">
+            <h3>Contact Information</h3>
+        </header>
+        <article class="contact-container">
+                       Schedule a phone call (714) 869-1194 or visit my social media links below: 
+                         </article>
+        <a href="https://google.com" class="smIcons">
+            <img src="assets/images/smIcons.PNG" alt="Linkedin Logo">
+        </a>
+  
+    </section>
+</body>
+</html>
+
+
+
