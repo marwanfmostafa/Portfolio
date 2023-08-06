@@ -14,7 +14,7 @@ github io link
 
 ## Usage
 
-This can be used as a way to introduyce and advertise myself to potential employers because it will be updated with projectrs I've completed as well as furture projects.
+This can be used as a way to introduce and advertise myself to potential employers because it will be updated with projectrs I've completed as well as furture projects.
 
 ## Credits
 
