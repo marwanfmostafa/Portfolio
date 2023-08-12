@@ -13,25 +13,23 @@ body {
 
 }
 
-/*removes undesirable purple dash that appeared around images that had interactable links*/
+
 a {
     text-decoration: none;
 }
 
-/*adds a scrool animation when going using the nav bar to skip to different parts of the site to every
-element in the html*/
+/*allows for scroll to various section of the website*/
 html {
     scroll-behavior: smooth;
 }
 
-/*adding the effect on hover to visually show when the user is hovered over all photos with an anchor link 
+/*hover to visually show when the user is hovered over all photos with an anchor link 
 (for every icon that links githubs/deployed projects*/
 a img:hover {
     transform:scale(1.1)
 }
 
-/*doing this to remove the default inline properties that section and div has, as I initially was using semantic tags that I found out are not 
-better to use than section or div as they aren't standard html elements*/
+/*removes default inline properties that section and div has*/
 section, div {
     display: inline; /* or inline, inline-block, etc. as needed */
 }
@@ -46,7 +44,7 @@ section, div {
 
 
 /*NAV BAR*/
-/*I used justify-space-between to create 3 clear sections of left, center, and right on the nav bar*/
+/*Enables justify-space-between to create three sections: left, center, and right on the nav bar*/
 nav {
     display: flex;
     align-items: center;
@@ -57,7 +55,7 @@ nav {
     padding-right: 10%;
 }
 
-/*This sets my 'center' elements on the same horizontal row instead of a column*/
+/*center elements on the same horizontal row*/
 nav ul li {
     display: inline-block;
     padding: 10px;
@@ -68,12 +66,12 @@ nav ul li a, nav p a  {
     text-decoration: none;
 }
 
-/*adding the effect on hover to visually show when the user is hovered over  the items on the nav bar*/
+/*hoverbeffect to visually show when the user is over the items on the nav bar*/
 nav ul li a:hover, nav p a:hover {
     font-size: larger;
 }
 
-/*creating a border unique to this nav bar element, to accentuate the contact button*/
+/*creates border around button*/
 nav p {
     border: 1px solid #D3D3D3;
     border-radius: var(--border-radius);
@@ -90,7 +88,7 @@ nav p {
 
 
 /*TITLE PAGE*/
-/*this section of code is positioning and sizing the title page correctly*/
+/*positioning and sizing the title page correctly*/
 .title {
     width: 100%;
     height: 1000px;
@@ -124,7 +122,7 @@ nav p {
 
 
 
-/*ABOUT ME PAGE*/
+/*About Me psge*/
 .about-me {
     display:flex;
     flex-direction: column;
@@ -138,8 +136,7 @@ nav p {
 
 }
 
-/*I'm able to group all of the headers styling in the same section, as they all share the same properties, I use the transform property to move it,
-as it moves the position of the entire header in one piece, rather than the line and the actual header seperately*/
+/*groups all of the headers styling in the same section.*/
 .about-me-header, .experience-header, .projects-header, .contact-header {
     display: flex;
     justify-content: center;
@@ -147,8 +144,7 @@ as it moves the position of the entire header in one piece, rather than the line
     width: var(--header-width);
 }
 
-/*this is a method i found on the internet to create a line that is vertically centered through my about me header, for decoration, again, I am able to 
-group all the header::after together as they share the exact same style*/
+/*creates a line that is vertically centered through my about me header*/
 .about-me-header::after, .experience-header::after, .projects-header::after, .other-projects-header::after, .contact-header::after {
     content: "";
     position: absolute;
@@ -158,16 +154,14 @@ group all the header::after together as they share the exact same style*/
     top: 50%;
 }
 
-/*Styling the text of the header, and setting a background + z index of 1 to have a break in the decorative line
-again, I am able to group all the header::after together as they share the exact same style*/
+/*Styling the text of the header, and setting a background*/
 .about-me-header h3, .experience-header h3, .projects-header h3, .other-projects-header h3, .contact-header h3 {
     z-index: 1;
     padding: 0 20px;
     font-size: 36px;
 }
 
-/*setting the background color of the actual header text for all headers so there is a visual break in the decorative line for all headers
-this color depends on the alterating background colors I have, hence the need for two different sections*/
+/*setting the background color of the header text for all headers so there is a visual break.*/
 .about-me-header h3, .projects-header h3, .other-projects-header h3{
     background-color: var(--alternate-bg);
 }
@@ -176,7 +170,7 @@ this color depends on the alterating background colors I have, hence the need fo
     background-color: var(--main-bg);
 }
 
-/*The rest of this section styles and positions the image, and text for the about me page*/
+/*styles and positions the image, and text for the about me page*/
 .about-me-container {
     position: absolute;
     display: flex;
